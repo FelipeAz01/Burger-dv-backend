@@ -1,0 +1,39 @@
+{
+  "name": "burguer-dv",
+  "version": "1.0.0",
+  "descriptions": "Burguer API.",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "author": {
+    "name": "Felipe Azevedo",
+    "url": "https://github.com/FelipeAz01"
+  },
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@stripe/stripe-js": "^5.6.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.5",
+    "stripe": "^17.6.0",
+    "uuid": "^11.0.5",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "nodemon": "^3.1.9",
+    "sequelize-cli": "^6.6.2",
+    "sucrase": "^3.35.0"
+  }
+}

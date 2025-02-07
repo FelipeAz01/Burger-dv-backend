@@ -1,7 +1,7 @@
 {
   "name": "burguer-dv",
   "version": "1.0.0",
-  "descriptions": "Burguer API.",
+  "descriptions": "burguer API.",
   "main": "src/server.js",
   "scripts": {
     "dev": "nodemon"

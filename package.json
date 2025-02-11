@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "descriptions": "burguer API.",
   "main": "src/server.js",
-  "scripts": {
-    "dev": "nodemon"
-  },
+ "scripts": {
+  "dev": "nodemon src/server.js",
+  "start": "node src/server.js"
+},
   "author": {
     "name": "Felipe Azevedo",
     "url": "https://github.com/FelipeAz01"

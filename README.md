@@ -52,3 +52,70 @@ A API está estruturada para garantir segurança e escalabilidade, seguindo boas
 <img width="900" height="500" src="https://github.com/user-attachments/assets/83bff36a-12f4-44ce-9a9e-b02bd86fe953">
 
 </div>
+
+
+
+ ## 📌 Como Rodar a API
+
+### 1️⃣ Clonar o Repositório
+```bash
+git clone https://github.com/FelipeAz01/Burger-dv-backend.git
+cd Burger-dv-backend
+```
+
+### 2️⃣ Instalar Dependências
+```bash
+npm install
+```
+
+### 3️⃣ Configurar as Variáveis de Ambiente
+Crie um arquivo `.env` na raiz do projeto e adicione as seguintes configurações:
+
+```ini
+PORT=5000
+DATABASE_URL=postgres://usuario:senha@localhost:5432/devburger
+JWT_SECRET=sua_chave_secreta
+STRIPE_SECRET_KEY=sua_chave_stripe
+```
+⚠️ **Se estiver usando MongoDB, adicione:** `MONGO_URI=mongodb://localhost:27017/devburger`
+
+### 4️⃣ Rodar com Docker (Opcional)
+Se preferir rodar tudo via **Docker**, utilize:
+```bash
+docker-compose up --build
+```
+Caso contrário, siga os próximos passos.
+
+### 5️⃣ Iniciar o Banco de Dados
+Se estiver utilizando **PostgreSQL** localmente, inicie o banco de dados:
+```bash
+sudo service postgresql start
+```
+Em seguida, crie e atualize as tabelas:
+```bash
+npx sequelize db:create
+npx sequelize db:migrate
+```
+Se estiver usando **MongoDB**, certifique-se de que o serviço está rodando.
+
+### 6️⃣ Iniciar o Servidor
+```bash
+npm start
+```
+Ou, em modo de desenvolvimento:
+```bash
+npm run dev
+```
+
+### 7️⃣ Testar a API
+Após iniciar o servidor, teste no navegador ou no Postman:
+```
+http://localhost:5000/api/ping
+```
+Se tudo estiver certo, sua API estará rodando! 🎉
+
+## 📄 Licença
+Este projeto é de código aberto e pode ser utilizado para aprendizado.
+
+---
+Se precisar de ajuda, me avise! 🚀

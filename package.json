@@ -1,6 +1,7 @@
 {
   "name": "burguer-dv",
   "version": "1.0.0",
+  "type": "module",
   "descriptions": "burguer API.",
   "main": "src/server.js",
  "scripts": {

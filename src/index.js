@@ -1,9 +1,13 @@
 import express from "express";
 import routes from './routes.js';
 
-import { resolve } from "node:path";
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
 import "./database";
 import cors from 'cors';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 class App {
   constructor() {
@@ -22,7 +26,7 @@ class App {
     );
     this.app.use(
       "/category-file",
-      express.static(resolve(__dirname, "..", "uploads")),
+      express.static(resolve(__dirname, "..", "uploads"))
     );
   }
 

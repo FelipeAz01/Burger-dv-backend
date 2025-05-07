@@ -2,18 +2,17 @@
   "name": "burguer-dv",
   "version": "1.0.0",
   "type": "module",
-  "descriptions": "burguer API.",
+  "description": "burguer API.",
   "main": "src/server.js",
- "scripts": {
-  "dev": "nodemon src/server.js",
-  "start": "node src/server.js"
-},
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
   "author": {
     "name": "Felipe Azevedo",
     "url": "https://github.com/FelipeAz01"
   },
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@stripe/stripe-js": "^5.6.0",
     "bcrypt": "^5.1.1",

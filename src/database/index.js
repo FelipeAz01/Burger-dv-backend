@@ -1,4 +1,4 @@
-import Sequelize from "sequelize";
+import { Sequelize } from "sequelize";
 import mongoose from "mongoose";
 
 import configDatabase from "../config/database";
@@ -24,6 +24,7 @@ class Database {
   }
 
   mongo() {
+    // Para o MongoDB, você pode utilizar mongoose.connect com a URL do banco
     this.mongoConnection = mongoose.connect(
       "mongodb://localhost:27017/devburguer"
     );

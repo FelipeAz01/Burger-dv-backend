@@ -3,7 +3,7 @@ import routes from './routes.js';
 
 import { fileURLToPath } from 'url';
 import { dirname, resolve } from 'path';
-import "./database";
+import "./database/index.js";
 import cors from 'cors';
 
 const __filename = fileURLToPath(import.meta.url);
